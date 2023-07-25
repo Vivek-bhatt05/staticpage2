@@ -1,21 +1,24 @@
-import { Inter } from 'next/font/google'
+import React from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Services = () => {
   return (
-    <>
-  <div style={{backgroundColor:"white"}}>
-  <header id="header" className="fixed-top d-flex align-items-center header-transparent">
+    <div>
+      
+
+
+      <div>
+  <header id="header" className="fixed-top d-flex align-items-center ">
     <div className="container d-flex justify-content-between align-items-center">
       <div className="logo">
         <h1 className="text-light"><a href="/"><span>Moderna</span></a></h1>
+        {/* Uncomment below if you prefer to use an image logo */}
+        <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" /></a>
       </div>
       <nav id="navbar" className="navbar">
         <ul>
-          <li><a className="active " href="/">Home</a></li>
+          <li><a className href="/">Home</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
+          <li><a className="active" href="/services">Services</a></li>
           <li><a href="/portfolio">Portfolio</a></li>
           <li><a href="/team">Team</a></li>
           <li><a href="/blog">Blog</a></li>
@@ -36,48 +39,25 @@ export default function Home() {
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <i className="bi bi-list mobile-nav-toggle" />
       </nav>{/* .navbar */}
     </div>
   </header>{/* End Header */}
-  {/* ======= Hero Section ======= */}
-  <section id="hero" className="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" className="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval={5000}>
-      {/* Slide 1 */}
-      <div className="carousel-item active">
-        <div className="carousel-container">
-          <h2 className="animate__animated animate__fadeInDown">Welcome to <span>Moderna</span></h2>
-          <p className="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a  className="btn-get-started animate__animated animate__fadeInUp">Read More</a>
-        </div>
-      </div>
-      {/* Slide 2 */}
-      <div className="carousel-item">
-        <div className="carousel-container">
-          <h2 className="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-          <p className="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a  className="btn-get-started animate__animated animate__fadeInUp">Read More</a>
-        </div>
-      </div>
-      {/* Slide 3 */}
-      <div className="carousel-item">
-        <div className="carousel-container">
-          <h2 className="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p className="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a  className="btn-get-started animate__animated animate__fadeInUp">Read More</a>
-        </div>
-      </div>
-      <a className="carousel-control-prev"  role="button" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true" />
-      </a>
-      <a className="carousel-control-next"  role="button" data-bs-slide="next">
-        <span className="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true" />
-      </a>
-    </div>
-  </section>{/* End Hero */}
   <main id="main">
+    {/* ======= Our Services Section ======= */}
+    <section className="breadcrumbs">
+      <div className="container">
+        <div className="d-flex justify-content-between align-items-center">
+          <h2>Our Services</h2>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>Our Services</li>
+          </ol>
+        </div>
+      </div>
+    </section>{/* End Our Services Section */}
     {/* ======= Services Section ======= */}
     <section className="services">
       <div className="container">
@@ -85,28 +65,28 @@ export default function Home() {
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div className="icon-box icon-box-pink">
               <div className="icon"><i className="bx bxl-dribbble" /></div>
-              <h4 className="title"><a >Lorem Ipsum</a></h4>
+              <h4 className="title"><a href>Lorem Ipsum</a></h4>
               <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
           </div>
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay={100}>
             <div className="icon-box icon-box-cyan">
               <div className="icon"><i className="bx bx-file" /></div>
-              <h4 className="title"><a >Sed ut perspiciatis</a></h4>
+              <h4 className="title"><a href>Sed ut perspiciatis</a></h4>
               <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div>
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay={200}>
             <div className="icon-box icon-box-green">
               <div className="icon"><i className="bx bx-tachometer" /></div>
-              <h4 className="title"><a >Magni Dolores</a></h4>
+              <h4 className="title"><a href>Magni Dolores</a></h4>
               <p className="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
           </div>
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay={200}>
             <div className="icon-box icon-box-blue">
               <div className="icon"><i className="bx bx-world" /></div>
-              <h4 className="title"><a>Nemo Enim</a></h4>
+              <h4 className="title"><a href>Nemo Enim</a></h4>
               <p className="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
           </div>
@@ -136,79 +116,108 @@ export default function Home() {
         </div>
       </div>
     </section>{/* End Why Us Section */}
-    {/* ======= Features Section ======= */}
-    <section className="features">
+    {/* ======= Service Details Section ======= */}
+    <section className="service-details">
       <div className="container">
-        <div className="section-title">
-          <h2>Features</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-        <div className="row" data-aos="fade-up">
-          <div className="col-md-5">
-            <img src="/img/features-1.svg" className="img-fluid" alt="" />
+        <div className="row">
+          <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div className="card">
+              <div className="card-img">
+                <img src="/img/service-details-1.jpg" alt="..." />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title"><a href="#">Our Mission</a></h5>
+                <p className="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <div className="read-more"><a href="#"><i className="bi bi-arrow-right" /> Read More</a></div>
+              </div>
+            </div>
           </div>
-          <div className="col-md-7 pt-4">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i className="bi bi-check" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i className="bi bi-check" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            </ul>
+          <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div className="card">
+              <div className="card-img">
+                <img src="/img/service-details-2.jpg" alt="..." />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title"><a href="#">Our Plan</a></h5>
+                <p className="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                <div className="read-more"><a href="#"><i className="bi bi-arrow-right" /> Read More</a></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="row" data-aos="fade-up">
-          <div className="col-md-5 order-1 order-md-2">
-            <img src="/img/features-2.svg" className="img-fluid" alt="" />
+          <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div className="card">
+              <div className="card-img">
+                <img src="/img/service-details-3.jpg" alt="..." />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title"><a href="#">Our Vision</a></h5>
+                <p className="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+                <div className="read-more"><a href="#"><i className="bi bi-arrow-right" /> Read More</a></div>
+              </div>
+            </div>
           </div>
-          <div className="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-        <div className="row" data-aos="fade-up">
-          <div className="col-md-5">
-            <img src="/img/features-3.svg" className="img-fluid" alt="" />
-          </div>
-          <div className="col-md-7 pt-5">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i className="bi bi-check" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i className="bi bi-check" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i className="bi bi-check" /> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
-          </div>
-        </div>
-        <div className="row" data-aos="fade-up">
-          <div className="col-md-5 order-1 order-md-2">
-            <img src="/img/features-4.svg" className="img-fluid" alt="" />
-          </div>
-          <div className="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+          <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div className="card">
+              <div className="card-img">
+                <img src="/img/service-details-4.jpg" alt="..." />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title"><a href="#">Our Care</a></h5>
+                <p className="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem. In molestiae earum ab sit esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil aut incidunt aut</p>
+                <div className="read-more"><a href="#"><i className="bi bi-arrow-right" /> Read More</a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>{/* End Features Section */}
+    </section>{/* End Service Details Section */}
+    {/* ======= Pricing Section ======= */}
+    <section className="pricing section-bg" data-aos="fade-up">
+      <div className="container">
+        <div className="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div className="row no-gutters">
+          <div className="col-lg-4 box">
+            <h3>Free</h3>
+            <h4>$0<span>per month</span></h4>
+            <ul>
+              <li><i className="bx bx-check" /> Quam adipiscing vitae proin</li>
+              <li><i className="bx bx-check" /> Nec feugiat nisl pretium</li>
+              <li><i className="bx bx-check" /> Nulla at volutpat diam uteera</li>
+              <li className="na"><i className="bx bx-x" /> <span>Pharetra massa massa ultricies</span></li>
+              <li className="na"><i className="bx bx-x" /> <span>Massa ultricies mi quis hendrerit</span></li>
+            </ul>
+            <a href="#" className="get-started-btn">Get Started</a>
+          </div>
+          <div className="col-lg-4 box featured">
+            <h3>Business</h3>
+            <h4>$29<span>per month</span></h4>
+            <ul>
+              <li><i className="bx bx-check" /> Quam adipiscing vitae proin</li>
+              <li><i className="bx bx-check" /> Nec feugiat nisl pretium</li>
+              <li><i className="bx bx-check" /> Nulla at volutpat diam uteera</li>
+              <li><i className="bx bx-check" /> Pharetra massa massa ultricies</li>
+              <li><i className="bx bx-check" /> Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <a href="#" className="get-started-btn">Get Started</a>
+          </div>
+          <div className="col-lg-4 box">
+            <h3>Developer</h3>
+            <h4>$49<span>per month</span></h4>
+            <ul>
+              <li><i className="bx bx-check" /> Quam adipiscing vitae proin</li>
+              <li><i className="bx bx-check" /> Nec feugiat nisl pretium</li>
+              <li><i className="bx bx-check" /> Nulla at volutpat diam uteera</li>
+              <li><i className="bx bx-check" /> Pharetra massa massa ultricies</li>
+              <li><i className="bx bx-check" /> Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <a href="#" className="get-started-btn">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>{/* End Pricing Section */}
   </main>{/* End #main */}
   {/* ======= Footer ======= */}
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration={500}>
@@ -278,12 +287,21 @@ export default function Home() {
         © Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
       </div>
       <div className="credits">
+        {/* All the links in the footer should remain intact. */}
+        {/* You can delete the links only if you purchased the pro version. */}
+        {/* Licensing information: https://bootstrapmade.com/license/ */}
+        {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ */}
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer>
 </div>
 
-    </>
+
+
+
+    </div>
   )
 }
+
+export default Services

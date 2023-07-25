@@ -1,4 +1,3 @@
-import React from 'react'
 
 const About = () => {
   return (
@@ -8,7 +7,7 @@ const About = () => {
       <div className="logo">
         <h1 className="text-light"><a href="/"><span>Moderna</span></a></h1>
         {/* Uncomment below if you prefer to use an image logo */}
-        {/* <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid" /></a> */}
+        {/* <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" /></a> */}
       </div>
       <nav id="navbar" className="navbar">
         <ul>
@@ -35,7 +34,7 @@ const About = () => {
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
         <i className="bi bi-list mobile-nav-toggle" />
       </nav>{/* .navbar */}
@@ -48,7 +47,7 @@ const About = () => {
         <div className="d-flex justify-content-between align-items-center">
           <h2>About Us</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li>About Us</li>
           </ol>
         </div>
@@ -59,7 +58,7 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <img src="assets/img/about.jpg" className="img-fluid" alt="" />
+            <img src="/img/about.jpg" className="img-fluid" alt="" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -145,7 +144,7 @@ const About = () => {
         <div className="testimonials-carousel swiper">
           <div className="swiper-wrapper">
             <div className="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
+              <img src="/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
               <h3>Saul Goodman</h3>
               <h4>Ceo &amp; Founder</h4>
               <p>
@@ -155,7 +154,7 @@ const About = () => {
               </p>
             </div>
             <div className="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
+              <img src="/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
               <h3>Sara Wilsson</h3>
               <h4>Designer</h4>
               <p>
@@ -165,7 +164,7 @@ const About = () => {
               </p>
             </div>
             <div className="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
+              <img src="/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
               <h3>Jena Karlis</h3>
               <h4>Store Owner</h4>
               <p>
@@ -175,7 +174,7 @@ const About = () => {
               </p>
             </div>
             <div className="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
+              <img src="/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
               <h3>Matt Brandon</h3>
               <h4>Freelancer</h4>
               <p>
@@ -185,7 +184,7 @@ const About = () => {
               </p>
             </div>
             <div className="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
+              <img src="/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
               <h3>John Larson</h3>
               <h4>Entrepreneur</h4>
               <p>
